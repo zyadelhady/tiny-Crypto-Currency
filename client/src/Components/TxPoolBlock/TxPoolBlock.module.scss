@@ -1,0 +1,15 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #1d1d1d;
+  padding: 4rem;
+  color: #ffffff;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 5rem;
+  z-index: 20;
+}

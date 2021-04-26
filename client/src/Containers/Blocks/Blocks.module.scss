@@ -1,0 +1,45 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5rem;
+  &_Blocks {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    padding-top: 3rem;
+
+    &_After {
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #c89efc;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  &_Arrow {
+    margin: 0 20px;
+    background-color: transparent;
+    border: none;
+
+    svg {
+      font-size: 4rem;
+      color: #c89efc;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #1d1d1d;
+  padding: 4rem;
+  color: #ffffff;
+  border-radius: 0.7rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  &_Input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+    label {
+      margin-right: 1rem;
+    }
+
+    input {
+      background-color: #2e2e2e;
+      padding: 1rem 2rem;
+      border-radius: 0.4rem;
+      outline: none;
+      border: none;
+      color: white;
+      width: 50rem;
+      font-size: 2rem;
+    }
+  }
+
+  &_Submit {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}

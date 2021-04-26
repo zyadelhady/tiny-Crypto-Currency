@@ -1,0 +1,16 @@
+.Container {
+  background-color: #1d1d1d;
+  padding: 8rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.7rem;
+  font-size: 4rem;
+  font-weight: 700;
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+}
