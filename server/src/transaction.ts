@@ -16,7 +16,6 @@ export class Transaction {
     public id: string,
     public sender: string,
     public receiver: string,
-    public amount: number,
     public txIns: TxIns,
     public txOuts: TxOuts
   ) {}
@@ -144,7 +143,7 @@ export const getTransactionId = (transaction: Transaction) => {
 export const getCoinbaseTransaction = (address: string, blockIndex: number) => {
   const txIn = new TxIn('', blockIndex, '', '');
   const txOut = new TxOut(address, COINBASE_AMOUNT);
-  const transaction = new Transaction('', '', address, COINBASE_AMOUNT, [txIn], [txOut]);
+  const transaction = new Transaction('', '', address, [txIn], [txOut]);
   transaction.id = getTransactionId(transaction);
   return transaction;
 };

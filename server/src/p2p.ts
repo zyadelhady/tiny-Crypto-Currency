@@ -53,6 +53,8 @@ class ResponseBlockchain extends IResponse {
 
     const latestBlockHeld = blockchain.getLatest();
 
+    console.log(chain);
+
     if (latestBlockReceived.index < latestBlockHeld.index) {
       console.log('Received blockchain is not longer than received blockchain.');
       return;

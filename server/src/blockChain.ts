@@ -29,7 +29,6 @@ export class Chain {
       'e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3',
       '',
       '',
-      50,
       [new TxIn('', 0, '', '')],
       [
         new TxOut(

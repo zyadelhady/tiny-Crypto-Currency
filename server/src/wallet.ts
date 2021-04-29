@@ -77,7 +77,6 @@ export class Wallet {
       '',
       this.publicKey,
       receiverAddress,
-      amount,
       unsignedTxIns,
       this.createTxOuts(receiverAddress, amount, leftOverAmount)
     );

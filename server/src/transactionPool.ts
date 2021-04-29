@@ -30,7 +30,7 @@ export class TxPool {
 
   public toTxsArray() {
     return [...this.pool.values()].flatMap((ts) =>
-      ts.map((t) => new Transaction(t.id, t.sender, t.receiver, t.amount, [...t.txIns], [...t.txOuts]))
+      ts.map((t) => new Transaction(t.id, t.sender, t.receiver, [...t.txIns], [...t.txOuts]))
     );
   }
 
