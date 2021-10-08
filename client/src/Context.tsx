@@ -62,7 +62,7 @@ export const ContextProvider: FC = ({ children }) => {
     try {
       const tx = await sendTx(address, amount);
       setTxPool((prev) => [...prev, tx]);
-    } catch (err) {
+    } catch (err: any) {
       setError(err.response.data.message);
       setTimeout(() => {
         setError('');
